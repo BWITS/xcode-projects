@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fxj-Va-rI9">
+                                <rect key="frame" x="-4" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="M4h-3f-tDz"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Navigation Bars" id="LBn-qM-RI7">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="yUK-FB-h9h">
+                                            <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="rewind" id="AUn-7y-CDo">
+                                            <color key="tintColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="En7-wX-gch">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Y3j-gT-aTx"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="organize" id="MyN-Ug-1XO"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7Pm-Cx-xit"/>
+                                    <barButtonItem systemItem="bookmarks" id="g8k-ik-6YB"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="QGe-uO-hdN"/>
+                                    <barButtonItem systemItem="stop" id="L4F-sl-LIQ"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="En7-wX-gch" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="0uw-Y2-HiS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="En7-wX-gch" secondAttribute="bottom" id="23O-CT-FeU"/>
+                            <constraint firstItem="Fxj-Va-rI9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VKM-W4-osp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fxj-Va-rI9" secondAttribute="trailing" constant="-20" id="lZU-SX-vcG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="En7-wX-gch" secondAttribute="trailing" constant="-20" id="lfZ-cc-Wf2"/>
+                            <constraint firstItem="Fxj-Va-rI9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="weW-8z-McD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="271"/>
+        </scene>
+    </scenes>
+</document>

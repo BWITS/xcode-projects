@@ -18,11 +18,6 @@ class ViewController: UIViewController {
             if number <= 1 {
                 isPrime = false
             } else if number > 3 {
-//                for var i = 2; i < (number/2 + 1); i++ {
-//                    if number % i == 0 {
-//                        isPrime = false
-//                    }
-//                }
                 if number % 2 == 0 || number % 3 == 0 {
                     isPrime = false
                 }
