@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var timeWatch: UILabel!
     @IBAction func play(sender: AnyObject) {
+        timer.invalidate()
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("increaseTimer"), userInfo: nil, repeats: true)
     }
     @IBAction func pause(sender: AnyObject) {
