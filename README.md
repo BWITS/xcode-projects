@@ -1,2 +1,2 @@
 # xcode-projects
-Xcode projects I am learning
+Xcode 7.2 with swift 2 
