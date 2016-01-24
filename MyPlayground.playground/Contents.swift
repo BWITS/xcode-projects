@@ -2,16 +2,17 @@
 
 import UIKit
 
-var number = 1
-var isPrime = true
+var str = "Hello"
 
-if number != 2 && number != 1 {
-  for var i=2;i<=number/2+1;i++ {
-    if number % i == 0 {
-        isPrime = false
-    }
-  }
+var myString = str + " world"
+
+for chars in myString.characters{
+    print (chars)
 }
 
-print(isPrime)
+var newTypeString = NSString(string: myString)
 
+newTypeString.substringWithRange(NSRange(location: 3, length: 4))
+newTypeString.containsString("wor")
+newTypeString.componentsSeparatedByString(" ")
+newTypeString.uppercaseString
